@@ -1,5 +1,5 @@
 #/bin/bash
-sed -i '/#ParallelDownloads = 5/c\ParallelDownlaods = 10' /etc/pacman.conf
+sed -i '/#ParallelDownloads\ =\ 5/c\ParallelDownlaods\ =\ 10' /etc/pacman.conf
 #sed -i '/#VerbosePkgLists/c\VerbosePkgLists' /etc/pacman.conf
 sed -i '/#Color/c\Color' /etc/pacman.conf
 #echo -e "ILoveCandy\n" >> /etc/pacman.conf
