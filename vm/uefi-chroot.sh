@@ -1,8 +1,8 @@
 #!/bin/bash
 ln -sf /usr/share/zoneinfo/America/Buenos_Aires /etc/localtime
 hwclock --systohc
-sed -i '/#en_US.UTF-8 UTF-8/c\en_US.UTF-8 UTF-8' /etc/locale.gen
-sed -i '/#es_AR.UTF-8 UTF-8/c\es_AR.UTF-8 UTF-8' /etc/locale.gen
+sed -i '/#en_US.UTF-8 UTF-8/c\en_US.UTF-8\ UTF-8' /etc/locale.gen
+sed -i '/#es_AR.UTF-8 UTF-8/c\es_AR.UTF-8\ UTF-8' /etc/locale.gen
 locale-gen
 echo LANG=en_US.UTF-8 > /etc/locale.conf
 echo archlinux > /etc/hostname
